@@ -29,25 +29,32 @@
                 </div>
                 <div class="col-md-4">
                     <label for="inputName" class="form-label">Km da percorrere</label>
-                    <input type="text" class="form-control" id="inputKM" placeholder="Km" aria-label="inputKm">
+                    <input type="text" class="form-control" id="inputKm" placeholder="Km" aria-label="inputKm">
                 </div>
                 <div class="col-md-4">
                     <label for="ageSelect" class="form-label">Fascia di età</label>
                     <select class="form-select" id="ageSelect" aria-label="Default select example">
                         <!-- <option selected>Open this select menu</option> -->
-                        <option value="1">Under 18</option>
-                        <option value="2">18 - 65</option>
-                        <option value="3">Over 65</option>
+                        <option value="under18">Under 18</option>
+                        <option value="standard">18 - 65</option>
+                        <option value="over65">Over 65</option>
                     </select>
                 </div>
                 <div class="col-12 mt-5">
-                    <button type="submit" class="btn btn-primary mb-3">Calcola</button>
+                    <button type="submit" id="ticketBtn" class="btn btn-primary mb-3">Calcola</button>
                 </div>
             </div>
-            <div class="row">
-            </div>
         </form>
+
+        <div class="row my-4 bg-white rounded text-center">
+            <div class="col">
+                <p id="result">risultato</p>
+            </div>
+        </div>
+
     </main>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
