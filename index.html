@@ -20,21 +20,21 @@
             </div>
         </div>
 
-        <form action="">
+        <form id="ticketForm" action="">
             <div class="row py-4 bg-warning d-flex justify-content-center align-items-center text-center rounded">
                 <div class="col-md-4">
                     <label for="inputName" class="form-label">Nome e Cognome</label>
                     <input type="text" class="form-control" id="inputName" placeholder="Full name"
-                        aria-label="Full name">
+                        aria-label="Full name" required>
                 </div>
                 <div class="col-md-4">
-                    <label for="inputName" class="form-label">Km da percorrere</label>
-                    <input type="text" class="form-control" id="inputKm" placeholder="Km" aria-label="inputKm">
+                    <label for="inputKm" class="form-label">Km da percorrere</label>
+                    <input type="number" class="form-control" id="inputKm" placeholder="Km" aria-label="inputKm" required>
                 </div>
                 <div class="col-md-4">
                     <label for="ageSelect" class="form-label">Fascia di età</label>
-                    <select class="form-select" id="ageSelect" aria-label="Default select example">
-                        <!-- <option selected>Open this select menu</option> -->
+                    <select class="form-select" id="ageSelect" aria-label="Default select example" required>
+                        <option disable selected>Scegli una fascia di età</option>
                         <option value="under18">Under 18</option>
                         <option value="standard">18 - 65</option>
                         <option value="over65">Over 65</option>
@@ -42,6 +42,7 @@
                 </div>
                 <div class="col-12 mt-5">
                     <button type="submit" id="ticketBtn" class="btn btn-primary mb-3">Calcola</button>
+                    <button type="reset" id="resetBtn" class="btn btn-primary mb-3">Reset</button>
                 </div>
             </div>
         </form>

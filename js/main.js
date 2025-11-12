@@ -2,7 +2,7 @@ const under18 = 0.20;
 const over65 = 0.40;
 const priceKm = 0.21;
 
-document.getElementById('ticketBtn').addEventListener('click', function(event) {
+document.getElementById('ticketForm').addEventListener('submit', function(event) {
     event.preventDefault();
     // debugger
     let name = document.getElementById('inputName').value;
@@ -21,3 +21,8 @@ document.getElementById('ticketBtn').addEventListener('click', function(event) {
     document.getElementById('result').innerText = `Il costo del tuo viaggio di ${inputKm}km come passeggero ${ticketType} sarà di euro ${result.toFixed(2)}`
 
 });
+
+document.getElementById('resetBtn').addEventListener('click', function(event){
+    document.getElementById('result').innerHTML = '';
+
+})
