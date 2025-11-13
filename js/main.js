@@ -30,7 +30,7 @@ document.getElementById('ticketForm').addEventListener('submit', function(event)
 
     passengerName.innerText = name;
     ticketCategory.innerText = ticketType;
-    ticketPrice.innerText = result;
+    ticketPrice.innerText = result + ('€');
     trainWagon.innerText = Math.floor(Math.random()* (6 - 1 + 1) + 1);
 
 });
