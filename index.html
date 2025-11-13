@@ -29,7 +29,8 @@
                 </div>
                 <div class="col-md-4">
                     <label for="inputKm" class="form-label">Km da percorrere</label>
-                    <input type="number" class="form-control" id="inputKm" placeholder="Km" aria-label="inputKm" required>
+                    <input type="number" class="form-control" id="inputKm" placeholder="Km" aria-label="inputKm"
+                        required>
                 </div>
                 <div class="col-md-4">
                     <label for="ageSelect" class="form-label">Fascia di età</label>
@@ -47,9 +48,34 @@
             </div>
         </form>
 
-        <div class="row my-4 bg-white rounded text-center">
-            <div class="col">
-                <p id="result">risultato</p>
+
+        <div class="row my-3">
+            <div class="col-12 text-white d-flex justify-content-center">
+                <h1>BIGLIETTO</h1>
+            </div>
+        </div>
+
+        <div class="row bg-white rounded align-items-center text-center p-3">
+
+            <div class="col-md-4 bg-warning-subtle py-3">
+                <h3>NOME PASSEGGERO</h3>
+                <p id="passengerName">-</p>
+            </div>
+            <div class="col-md-2 py-3">
+                <h5>Tariffa</h5>
+                <p id="ticketCategory">-</p>
+            </div>
+            <div class="col-md-2 py-3">
+                <h5>Carrozza</h5>
+                <p id="trainWagon">-</p>
+            </div>
+            <div class="col-md-2 py-3">
+                <h5>Codice CP</h5>
+                <p id="ticketCode">-</p>
+            </div>
+            <div class="col-md-2 py-3">
+                <h5>Costo biglietto</h5>
+                <p id="ticketPrice">-</p>
             </div>
         </div>
 
