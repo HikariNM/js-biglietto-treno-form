@@ -8,7 +8,16 @@ const trainWagon = document.getElementById('trainWagon');
 const ticketCode = document.getElementById('ticketCode');
 const ticketPrice = document.getElementById('ticketPrice');
 
+function generateTicketCode(){
+    const char = 'ABCDEFGHILMNOPQRSTUVZ0123456789'
+    let result = '';
 
+    for (let i = 0; i < 6; i++) {
+         result += char.charAt(Math.floor(Math.random() * char.length));
+        
+    }
+    return result
+};
 
 document.getElementById('ticketForm').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -32,6 +41,7 @@ document.getElementById('ticketForm').addEventListener('submit', function(event)
     ticketCategory.innerText = ticketType;
     ticketPrice.innerText = result + ('€');
     trainWagon.innerText = Math.floor(Math.random()* (6 - 1 + 1) + 1);
+    ticketCode.innerText = generateTicketCode();
 
 });
 
