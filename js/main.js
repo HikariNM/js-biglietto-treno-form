@@ -46,6 +46,10 @@ document.getElementById('ticketForm').addEventListener('submit', function(event)
 });
 
 document.getElementById('resetBtn').addEventListener('click', function(event){
-    document.getElementById('result').innerHTML = '';
+    passengerName.innerText = '-';
+    ticketCategory.innerText = '-';
+    ticketPrice.innerText = '-';
+    trainWagon.innerText = '-';
+    ticketCode.innerText = '-';
 
 })
