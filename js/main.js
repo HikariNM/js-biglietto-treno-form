@@ -73,7 +73,8 @@ document.getElementById('resetBtn').addEventListener('click', function(event){
     ticketPrice.innerText = '-';
     trainWagon.innerText = '-';
     ticketCode.innerText = '-';
-
+    document.getElementById("qrcode").style.display = "none";
+    document.querySelector(".scan").style.display = "none";
 })
 
 
