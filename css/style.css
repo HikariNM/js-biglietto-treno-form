@@ -1,0 +1,14 @@
+#barcode {
+    display: none;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+#qrcode {
+    display: none;
+    margin: 0 auto;
+    padding-top: 1rem;
+    justify-content: center;
+}
+.scan{
+    display: none;
+}
